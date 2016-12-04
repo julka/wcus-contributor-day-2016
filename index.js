@@ -630,4 +630,21 @@ describe('users', function() {
             });
         });
     });
+
+/*
+    var oneOffTestId = 6;
+    describe('check if unauthed user can get GET single context=view implicit for specific user', function() {
+        it('should not be able to retrieve user info without auth', function(done) {
+            request
+            .get('users/'+ oneOffTestId)
+            .send()
+            .expect(200)
+            .end(function(err, res) {
+                expect(res.body).to.be.a('object');
+                console.log(res.body);
+                done(err, res);
+            });
+        });
+    });
+*/
 });
