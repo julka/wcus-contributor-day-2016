@@ -634,7 +634,7 @@ describe('users', function() {
 /*
     var oneOffTestId = 6;
     describe('check if unauthed user can get GET single context=view implicit for specific user', function() {
-        it('should not be able to retrieve user info without auth', function(done) {
+        it('should be able to retrieve user info without auth', function(done) {
             request
             .get('users/'+ oneOffTestId)
             .send()
