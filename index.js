@@ -49,6 +49,7 @@ describe('users', function() {
                     expect(user.capabilities).to.be.undefined;
                     expect(user.extra_capabilities).to.be.undefined;
                     expect(user.avatar_urls).to.be.a('object');
+                    // meta should be an object
                     expect(user.meta).to.be.a('array');
                 });
                 done(err, res);
@@ -81,6 +82,7 @@ describe('users', function() {
                     expect(user.capabilities).to.be.undefined;
                     expect(user.extra_capabilities).to.be.undefined;
                     expect(user.avatar_urls).to.be.a('object');
+                    // meta should be an object
                     expect(user.meta).to.be.a('array');
                 });
                 done(err, res);
@@ -114,7 +116,9 @@ describe('users', function() {
                     expect(user.capabilities).to.be.undefined;
                     expect(user.extra_capabilities).to.be.undefined;
                     expect(user.avatar_urls).to.be.a('object');
-                    expect(user.meta).to.be.a('array');                });
+                    // meta should be an object
+                    expect(user.meta).to.be.a('array');
+                });
                 done(err, res);
             });
         });
@@ -145,7 +149,9 @@ describe('users', function() {
                     expect(user.capabilities).to.be.undefined;
                     expect(user.extra_capabilities).to.be.undefined;
                     expect(user.avatar_urls).to.be.a('object');
-                    expect(user.meta).to.be.a('array');                });
+                    // meta should be an object
+                    expect(user.meta).to.be.a('array');
+                });
                 done(err, res);
             });
         });
@@ -190,6 +196,7 @@ describe('users', function() {
                     expect(user.capabilities).to.be.a('object');
                     expect(user.extra_capabilities).to.be.a('object');
                     expect(user.avatar_urls).to.be.a('object');
+                    // meta should be an object
                     expect(user.meta).to.be.a('array');
                 });
                 done(err, res);
@@ -400,6 +407,7 @@ describe('users', function() {
                 expect(userResult.avatar_urls[24]).to.equal(newUserOutput.avatar_urls[24]);
                 expect(userResult.avatar_urls[48]).to.equal(newUserOutput.avatar_urls[48]);
                 expect(userResult.avatar_urls[96]).to.equal(newUserOutput.avatar_urls[96]);
+                // meta should be an object
                 expect(userResult.meta).to.be.a('array');
                 done(err, res);
             });
@@ -448,6 +456,7 @@ describe('users', function() {
                 expect(userResult.avatar_urls[24]).to.equal(newUserOutput.avatar_urls[24]);
                 expect(userResult.avatar_urls[48]).to.equal(newUserOutput.avatar_urls[48]);
                 expect(userResult.avatar_urls[96]).to.equal(newUserOutput.avatar_urls[96]);
+                // meta should be an object
                 expect(userResult.meta).to.be.a('array');
                 done(err, res);
             });
@@ -496,6 +505,7 @@ describe('users', function() {
                 expect(userResult.avatar_urls[24]).to.equal(newUserOutput.avatar_urls[24]);
                 expect(userResult.avatar_urls[48]).to.equal(newUserOutput.avatar_urls[48]);
                 expect(userResult.avatar_urls[96]).to.equal(newUserOutput.avatar_urls[96]);
+                // meta should be an object
                 expect(userResult.meta).to.be.a('array');
                 done(err, res);
             });
